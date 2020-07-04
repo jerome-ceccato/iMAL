@@ -1,0 +1,30 @@
+# ----------------------------------------
+# Events
+# ----------------------------------------
+Event Name,Count,Users,Mark as conversion
+app_exception,21067,6974,false
+app_open,32104588,315290,false
+app_update,339872,80235,false
+event_add,5738589,150868,false
+event_add_chapter,1316672,32348,false
+event_add_episode,8733206,108572,false
+event_add_volume,203463,23216,false
+event_delete,246871,33565,false
+event_quick_action,3951321,131281,false
+event_related,2403967,71088,false
+event_search,41455979,123985,false
+event_update,3742434,133580,false
+first_open,334592,305293,true
+os_update,529540,122414,false
+screen_view,127948715,290290,false
+session_start,10600754,296561,false
+view_add_episode,3,1,false
+view_delete,1,1,false
+view_entity_details,24776830,185588,false
+view_entity_preview,13353440,163910,false
+view_entity_search,2756843,134399,false
+view_friend_list,872550,48709,false
+view_login,1014272,296298,false
+view_quick_action,3,1,false
+view_settings,1781658,177705,false
+view_user_list,27258999,214117,false
