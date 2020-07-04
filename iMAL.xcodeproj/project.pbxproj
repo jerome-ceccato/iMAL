@@ -1752,7 +1752,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iMAL/Pods-iMAL-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iMAL/Pods-iMAL-resources.sh",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
@@ -1763,7 +1763,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMAL/Pods-iMAL-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iMAL/Pods-iMAL-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3D0FD97941F515777152DD54 /* [CP] Check Pods Manifest.lock */ = {
@@ -1820,7 +1820,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iMAL/Pods-iMAL-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iMAL/Pods-iMAL-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AEXML/AEXML.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
@@ -1849,7 +1849,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMAL/Pods-iMAL-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iMAL/Pods-iMAL-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		99BDC7149E60D16CE833F455 /* [CP] Check Pods Manifest.lock */ = {

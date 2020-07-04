@@ -22,7 +22,3 @@ fastlane/report.xml
 fastlane/build/
 .DS_Store
 *~
-
-AppConstants.swift
-Firebase-Crash.json
-GoogleService-Info.plist
