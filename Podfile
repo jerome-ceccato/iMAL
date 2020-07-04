@@ -13,8 +13,6 @@ target 'iMAL' do
 
   pod 'TwitterKit'
 
-  pod 'SwiftTryCatch', :git => 'https://github.com/ravero/SwiftTryCatch.git'
-
   pod 'Firebase'
   pod 'Fabric'
   pod 'Crashlytics'

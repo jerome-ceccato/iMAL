@@ -29,7 +29,6 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
-  - SwiftTryCatch (1.0.0)
   - SwiftyJSON (4.0.0)
   - Toast-Swift (3.0.1)
   - TwitterCore (3.1.0)
@@ -44,7 +43,6 @@ DEPENDENCIES:
   - Fabric
   - Firebase
   - INSPhotoGallery
-  - SwiftTryCatch (from `https://github.com/ravero/SwiftTryCatch.git`)
   - SwiftyJSON
   - Toast-Swift
   - TwitterKit
@@ -68,15 +66,6 @@ SPEC REPOS:
     - TwitterCore
     - TwitterKit
 
-EXTERNAL SOURCES:
-  SwiftTryCatch:
-    :git: https://github.com/ravero/SwiftTryCatch.git
-
-CHECKOUT OPTIONS:
-  SwiftTryCatch:
-    :commit: 46ca643dc8b9e47482437e906b30952712e8e232
-    :git: https://github.com/ravero/SwiftTryCatch.git
-
 SPEC CHECKSUMS:
   AEXML: 5ebafc1b75e0bcf0f1b09b8ca8fed2d5a199479b
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
@@ -90,12 +79,11 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   INSPhotoGallery: 8bd5b434e70d06dd698085f8e865f6602d82014b
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
-  SwiftTryCatch: fc83ba75e26f7207749b568c50965218d99e1571
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
   TwitterCore: 644d59e75abccb26cf0a9050d2c4dea0e5412241
   TwitterKit: a2e60ddcedbf54091eac6f27685ca7a87681e1d7
 
-PODFILE CHECKSUM: df0920474aec1706625eb89b8a707e83ca4a9942
+PODFILE CHECKSUM: 1b5a91e5eea04d8879495755064c8ab9b2bc5b47
 
 COCOAPODS: 1.7.2

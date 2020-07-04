@@ -7,32 +7,34 @@
 //
 
 import UIKit
-import SwiftTryCatch
 
 class SafeArchiver {
     class func unarchiveObject(withFile filename: String) -> Any? {
         var data : Any? = nil
         
         if FileManager.default.fileExists(atPath: filename) {
-            SwiftTryCatch.try({
-                data = NSKeyedUnarchiver.unarchiveObject(withFile: filename)
-            }, catch: { ex in
-                print("Failed to unarchive \(filename): \(String(describing: ex))")
-            }, finallyBlock: {})
+            do {
+                let rawData = try Data(contentsOf: URL(fileURLWithPath: filename))
+                data = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(rawData)
+            } catch {
+                return nil
+            }
         }
         return data
     }
     
     @discardableResult
     class func archiveRootObject(_ data: Any, toFile filename: String) -> Bool {
-        var result: Bool = false
-        
-        SwiftTryCatch.try({
-            result = NSKeyedArchiver.archiveRootObject(data, toFile: filename)
-        }, catch: { ex in
-            print("Failed to archive \(filename): \(String(describing: ex))")
-        }, finallyBlock: {})
-        
-        return result
+        do {
+            if #available(iOS 11.0, *) {
+                let archive = try NSKeyedArchiver.archivedData(withRootObject: data, requiringSecureCoding: false)
+                try archive.write(to: URL(fileURLWithPath: filename))
+                return true
+            } else {
+                return NSKeyedArchiver.archiveRootObject(data, toFile: filename)
+            }
+        } catch  {
+            return false
+        }
     }
 }
