@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TaV-jg-AgC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Manga-->
+        <scene sceneID="6YM-Dq-fBy">
+            <objects>
+                <navigationController id="TaV-jg-AgC" customClass="CustomNavigationController" customModule="iMAL" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Manga" image="Tabbar-Manga-off" selectedImage="Tabbar-Manga-on" id="5jQ-jV-5kk"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics">
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </simulatedTabBarMetrics>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N7F-Ks-XgR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9fW-HZ-Uf4" kind="relationship" relationship="rootViewController" id="1EL-fW-4o2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K1p-9D-YHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089" y="1120"/>
+        </scene>
+        <!--MangaDefaultTableViewController-->
+        <scene sceneID="n3u-ML-77E">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MangaCollectionControllers" referencedIdentifier="MangaDefaultTableViewController" id="hNj-Xn-ujX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BAc-Ct-Lcp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2709" y="1418"/>
+        </scene>
+        <!--My Manga List-->
+        <scene sceneID="nY0-dS-H9b">
+            <objects>
+                <viewController id="9fW-HZ-Uf4" userLabel="My Manga List" customClass="HomeMangaListViewController" customModule="iMAL" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9SV-N2-4sQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="DAK-Ea-G6k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1GJ-4g-X2l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAv-xK-88Z">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eAv-xK-88Z" firstAttribute="leading" secondItem="1GJ-4g-X2l" secondAttribute="leading" id="9MO-ag-yhm"/>
+                            <constraint firstAttribute="trailing" secondItem="eAv-xK-88Z" secondAttribute="trailing" id="Dtb-40-3ps"/>
+                            <constraint firstItem="eAv-xK-88Z" firstAttribute="top" secondItem="1GJ-4g-X2l" secondAttribute="top" id="O1T-gQ-31g"/>
+                            <constraint firstAttribute="bottom" secondItem="eAv-xK-88Z" secondAttribute="bottom" id="hbh-P1-tra"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Manga List" id="frW-Tt-YgK" userLabel="My Manga List">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="3hS-Gv-mDm"/>
+                        <barButtonItem key="leftBarButtonItem" image="Sort" id="cCX-TM-4cH">
+                            <connections>
+                                <action selector="sortMainButtonPressed" destination="9fW-HZ-Uf4" id="MIl-6S-QzC"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="vWh-9M-b5t">
+                            <connections>
+                                <action selector="startSearch" destination="9fW-HZ-Uf4" id="sbZ-mh-V4Q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="listContainerView" destination="eAv-xK-88Z" id="JaM-2h-YL0"/>
+                        <outlet property="searchBarButton" destination="vWh-9M-b5t" id="GlW-V7-5HP"/>
+                        <outlet property="sortBarButton" destination="cCX-TM-4cH" id="mYh-1e-bDn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o1e-RR-0oT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="1119"/>
+        </scene>
+        <!--Manga List Search View Controller-->
+        <scene sceneID="WZp-9n-JLB">
+            <objects>
+                <viewController storyboardIdentifier="EntityListSearchViewController" id="REg-p8-erR" customClass="MangaListSearchViewController" customModule="iMAL" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vr1-Ws-AYR"/>
+                        <viewControllerLayoutGuide type="bottom" id="QYM-i5-sbs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xiZ-kr-asB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sl8-fc-jk5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="hNj-Xn-ujX" kind="embed" identifier="UITableViewController" id="KtZ-De-rId"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Sl8-fc-jk5" secondAttribute="bottom" id="0Oc-bk-4TZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Sl8-fc-jk5" secondAttribute="trailing" id="e0t-bD-HRm"/>
+                            <constraint firstItem="Sl8-fc-jk5" firstAttribute="leading" secondItem="xiZ-kr-asB" secondAttribute="leading" id="f2U-6N-5IU"/>
+                            <constraint firstItem="Sl8-fc-jk5" firstAttribute="top" secondItem="xiZ-kr-asB" secondAttribute="top" id="y1W-nc-q28"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3w-dV-ZDZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="1809"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Sort" width="22" height="22"/>
+        <image name="Tabbar-Manga-off" width="30" height="30"/>
+        <image name="Tabbar-Manga-on" width="30" height="30"/>
+    </resources>
+</document>

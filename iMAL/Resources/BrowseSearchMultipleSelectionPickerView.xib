@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BrowseSearchMultipleSelectionPickerView" customModule="iMAL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="GsM-a4-01Z">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                    <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <items/>
+                </toolbar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="36" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rmo-Gb-PbP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" red="0.16862745100000001" green="0.17254901959999999" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="45m-L5-Dh2"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="g6I-wB-u6z"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Rmo-Gb-PbP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3Us-n7-AhG"/>
+                <constraint firstAttribute="trailing" secondItem="GsM-a4-01Z" secondAttribute="trailing" id="5Ua-a0-at3"/>
+                <constraint firstAttribute="bottom" secondItem="Rmo-Gb-PbP" secondAttribute="bottom" id="CtA-ry-R5Q"/>
+                <constraint firstAttribute="trailing" secondItem="Rmo-Gb-PbP" secondAttribute="trailing" id="RYU-6h-7Xc"/>
+                <constraint firstItem="Rmo-Gb-PbP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Yhm-jd-NdG"/>
+                <constraint firstAttribute="bottom" secondItem="GsM-a4-01Z" secondAttribute="bottom" id="bEN-yC-xpi"/>
+                <constraint firstItem="GsM-a4-01Z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dIp-tm-vPV"/>
+                <constraint firstItem="GsM-a4-01Z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ufY-sc-vOt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundToolbar" destination="GsM-a4-01Z" id="GBb-Zm-GDn"/>
+                <outlet property="tableView" destination="Rmo-Gb-PbP" id="HqJ-xZ-Gs4"/>
+            </connections>
+        </view>
+    </objects>
+</document>

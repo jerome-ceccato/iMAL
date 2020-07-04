@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tag Edit View Controller-->
+        <scene sceneID="FIA-JI-OgG">
+            <objects>
+                <viewController storyboardIdentifier="TagEditViewController" id="WTK-OW-4HO" customClass="TagEditViewController" customModule="iMAL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RnN-8u-sma">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" text="tags" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NBQ-Mn-FZS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
+                                <connections>
+                                    <outlet property="delegate" destination="WTK-OW-4HO" id="PNL-JX-MAa"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NBQ-Mn-FZS" firstAttribute="leading" secondItem="Aky-CU-2QV" secondAttribute="leading" id="EMy-fq-PrF"/>
+                            <constraint firstItem="Aky-CU-2QV" firstAttribute="trailing" secondItem="NBQ-Mn-FZS" secondAttribute="trailing" id="but-bQ-BdK"/>
+                            <constraint firstItem="NBQ-Mn-FZS" firstAttribute="top" secondItem="Aky-CU-2QV" secondAttribute="top" id="cqP-tR-BQh"/>
+                            <constraint firstItem="Aky-CU-2QV" firstAttribute="bottom" secondItem="NBQ-Mn-FZS" secondAttribute="bottom" id="m1m-jv-j30"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Aky-CU-2QV"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <connections>
+                        <outlet property="textView" destination="NBQ-Mn-FZS" id="lcr-GS-RAY"/>
+                        <outlet property="textViewBottomConstraint" destination="m1m-jv-j30" id="39l-r8-8PW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7g-3f-syg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="170"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ntI-0x-7bH" customClass="EntityDetailsThemeEntryRowView" customModule="iMAL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="25"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" verticalCompressionResistancePriority="999" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yb2-sH-qaG" customClass="CopyableLabel" customModule="iMAL" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="preferredMenuArrowDirection" value="down"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yb2-sH-qaG" firstAttribute="top" secondItem="ntI-0x-7bH" secondAttribute="top" id="4Cq-i7-V6b"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yb2-sH-qaG" secondAttribute="bottom" priority="999" constant="7" id="80v-ed-auP"/>
+                <constraint firstItem="6Tg-3x-HFJ" firstAttribute="trailing" secondItem="yb2-sH-qaG" secondAttribute="trailing" id="91P-33-ckH"/>
+                <constraint firstItem="yb2-sH-qaG" firstAttribute="leading" secondItem="6Tg-3x-HFJ" secondAttribute="leading" id="fgK-A3-sfn"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="6Tg-3x-HFJ"/>
+            <connections>
+                <outlet property="contentLabel" destination="yb2-sH-qaG" id="nIm-m6-b0J"/>
+            </connections>
+        </view>
+    </objects>
+</document>

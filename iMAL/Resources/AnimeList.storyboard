@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vtw-jF-wGZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AnimeDefaultTableViewController-->
+        <scene sceneID="r7z-PA-vRB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AnimeCollectionControllers" referencedIdentifier="AnimeDefaultTableViewController" id="U9I-OO-NuM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzu-7y-X3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2702" y="743"/>
+        </scene>
+        <!--My Anime List-->
+        <scene sceneID="zXw-82-qSN">
+            <objects>
+                <viewController id="GZn-FS-ceN" customClass="HomeAnimeListViewController" customModule="iMAL" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u6a-W7-g3Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="T1e-ol-RKp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BAT-po-pZS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t97-BK-ZjG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t97-BK-ZjG" firstAttribute="leading" secondItem="BAT-po-pZS" secondAttribute="leading" id="0rN-rX-y73"/>
+                            <constraint firstAttribute="bottom" secondItem="t97-BK-ZjG" secondAttribute="bottom" id="3hY-bx-wF6"/>
+                            <constraint firstAttribute="trailing" secondItem="t97-BK-ZjG" secondAttribute="trailing" id="5LY-n5-rgn"/>
+                            <constraint firstItem="t97-BK-ZjG" firstAttribute="top" secondItem="BAT-po-pZS" secondAttribute="top" id="XDK-Mg-kXp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Anime List" id="Sb5-sz-KXh">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="EUW-kt-IVX"/>
+                        <barButtonItem key="leftBarButtonItem" image="Sort" id="fR5-EO-R0J">
+                            <connections>
+                                <action selector="sortMainButtonPressed" destination="GZn-FS-ceN" id="nsQ-8u-8RG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="vLL-nJ-il0">
+                            <connections>
+                                <action selector="startSearch" destination="GZn-FS-ceN" id="IDD-np-iqr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="listContainerView" destination="t97-BK-ZjG" id="9et-M2-0gF"/>
+                        <outlet property="searchBarButton" destination="vLL-nJ-il0" id="cKf-GX-KdT"/>
+                        <outlet property="sortBarButton" destination="fR5-EO-R0J" id="k21-3X-VrB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J54-Cz-KBn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1822" y="444"/>
+        </scene>
+        <!--Anime List Search View Controller-->
+        <scene sceneID="Ym8-JR-vyq">
+            <objects>
+                <viewController storyboardIdentifier="EntityListSearchViewController" id="2KJ-YN-3xQ" customClass="AnimeListSearchViewController" customModule="iMAL" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RI6-Yz-I2n"/>
+                        <viewControllerLayoutGuide type="bottom" id="MME-j7-w4i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L5O-AM-NzE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHd-e1-vFu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="U9I-OO-NuM" kind="embed" identifier="UITableViewController" id="XSc-NQ-Nuf"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bHd-e1-vFu" secondAttribute="bottom" id="C1K-LJ-8vX"/>
+                            <constraint firstAttribute="trailing" secondItem="bHd-e1-vFu" secondAttribute="trailing" id="Hwz-0w-F7Y"/>
+                            <constraint firstItem="bHd-e1-vFu" firstAttribute="top" secondItem="L5O-AM-NzE" secondAttribute="top" id="gha-9S-Rsj"/>
+                            <constraint firstItem="bHd-e1-vFu" firstAttribute="leading" secondItem="L5O-AM-NzE" secondAttribute="leading" id="jeO-PR-2Df"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gh4-ec-mTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1822" y="1134"/>
+        </scene>
+        <!--Anime-->
+        <scene sceneID="gBr-lS-ZyZ">
+            <objects>
+                <navigationController id="vtw-jF-wGZ" customClass="CustomNavigationController" customModule="iMAL" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Anime" image="Tabbar-Anime-off" selectedImage="Tabbar-Anime-on" id="GkJ-Ay-hyf"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics">
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </simulatedTabBarMetrics>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CcR-Mz-dfc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GZn-FS-ceN" kind="relationship" relationship="rootViewController" id="RPB-PD-JJM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0LD-hc-HoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089" y="444"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Sort" width="22" height="22"/>
+        <image name="Tabbar-Anime-off" width="30" height="30"/>
+        <image name="Tabbar-Anime-on" width="30" height="30"/>
+    </resources>
+</document>

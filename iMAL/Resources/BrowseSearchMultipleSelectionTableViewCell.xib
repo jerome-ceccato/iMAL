@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BrowseSearchMultipleSelectionTableViewCell" rowHeight="36" id="4MG-QD-9uK" customClass="BrowseSearchMultipleSelectionTableViewCell" customModule="iMAL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4MG-QD-9uK" id="tep-SV-wVc">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="35.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrd-BL-VUU">
+                        <rect key="frame" x="164" y="6" width="48" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="success" translatesAutoresizingMaskIntoConstraints="NO" id="2J2-WE-MHg" customClass="TemplateImageView" customModule="iMAL" customModuleProvider="target">
+                        <rect key="frame" x="222" y="8" width="20" height="20"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="EBe-1M-ajJ"/>
+                            <constraint firstAttribute="width" constant="20" id="Z8c-Yb-oFJ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Rrd-BL-VUU" firstAttribute="centerY" secondItem="tep-SV-wVc" secondAttribute="centerY" id="9Z2-QY-CJE"/>
+                    <constraint firstItem="2J2-WE-MHg" firstAttribute="centerY" secondItem="tep-SV-wVc" secondAttribute="centerY" id="ANE-Rn-c6y"/>
+                    <constraint firstItem="2J2-WE-MHg" firstAttribute="leading" secondItem="Rrd-BL-VUU" secondAttribute="trailing" constant="10" id="Kab-JO-QSz"/>
+                    <constraint firstItem="Rrd-BL-VUU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tep-SV-wVc" secondAttribute="leading" constant="20" id="aJ1-lK-HxP"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2J2-WE-MHg" secondAttribute="trailing" constant="20" id="cMp-pJ-4Tm"/>
+                    <constraint firstItem="Rrd-BL-VUU" firstAttribute="centerX" secondItem="tep-SV-wVc" secondAttribute="centerX" id="eSE-s7-yCL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <viewLayoutGuide key="safeArea" id="xGA-Ov-eFl"/>
+            <connections>
+                <outlet property="contentLabel" destination="Rrd-BL-VUU" id="P6f-rb-izU"/>
+                <outlet property="selectedImageView" destination="2J2-WE-MHg" id="YSR-VW-uqE"/>
+            </connections>
+            <point key="canvasLocation" x="8" y="29"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="success" width="50" height="50"/>
+    </resources>
+</document>

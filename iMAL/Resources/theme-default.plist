@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colorCode</key>
+	<dict>
+		<key>watching</key>
+		<string>#85b95f</string>
+		<key>completed</key>
+		<string>#6785cb</string>
+		<key>onHold</key>
+		<string>#e6c663</string>
+		<key>dropped</key>
+		<string>#b0544f</string>
+		<key>planToWatch</key>
+		<string>#8c8c8c</string>
+	</dict>
+	<key>global</key>
+	<dict>
+		<key>bars</key>
+		<dict>
+			<key>background</key>
+			<string>#101010</string>
+			<key>title</key>
+			<string>white</string>
+			<key>content</key>
+			<string>white</string>
+			<key>style</key>
+			<string>default</string>
+		</dict>
+		<key>activeTint</key>
+		<string>#24AAFF</string>
+		<key>statusBar</key>
+		<string>lightContent</string>
+		<key>viewBackground</key>
+		<string>#161616</string>
+		<key>scrollIndicators</key>
+		<string>white</string>
+		<key>genericText</key>
+		<string>white</string>
+		<key>actionButton</key>
+		<string>#24AAFF</string>
+		<key>link</key>
+		<string>#24AAFF</string>
+		<key>destructiveButton</key>
+		<string>#D95F4E</string>
+		<key>keyboardStyle</key>
+		<string>dark</string>
+		<key>keyboardIndicator</key>
+		<string>white</string>
+		<key>loadingIndicators</key>
+		<dict>
+			<key>standalone</key>
+			<dict>
+				<key>activityIndicator</key>
+				<string>white</string>
+				<key>content</key>
+				<string>white 90%</string>
+				<key>background</key>
+				<string>black 80%</string>
+			</dict>
+			<key>regular</key>
+			<string>white</string>
+		</dict>
+		<key>selectableCellBackground</key>
+		<string>clear</string>
+		<key>selectableCellHighlightedBackground</key>
+		<string>white 5%</string>
+	</dict>
+	<key>picker</key>
+	<dict>
+		<key>background</key>
+		<string>#161616</string>
+		<key>text</key>
+		<string>white</string>
+	</dict>
+	<key>header</key>
+	<dict>
+		<key>bar</key>
+		<dict>
+			<key>background</key>
+			<string>#101010</string>
+			<key>title</key>
+			<string>white</string>
+			<key>content</key>
+			<string>white</string>
+			<key>style</key>
+			<string>default</string>
+		</dict>
+		<key>closedIndicator</key>
+		<string>white 15%</string>
+		<key>tapToOpenIndicator</key>
+		<string>white 80%</string>
+	</dict>
+	<key>separators</key>
+	<dict>
+		<key>entityList</key>
+		<string>#2B2C2D</string>
+		<key>heavy</key>
+		<string>#404040</string>
+		<key>light</key>
+		<string>#303030</string>
+		<key>pickers</key>
+		<string>white 15%</string>
+	</dict>
+	<key>entity</key>
+	<dict>
+		<key>name</key>
+		<string>white</string>
+		<key>status</key>
+		<string>white</string>
+		<key>type</key>
+		<string>white 90%</string>
+		<key>score</key>
+		<string>#24AAFF</string>
+		<key>metrics</key>
+		<string>white</string>
+		<key>label</key>
+		<string>white 50%</string>
+		<key>tags</key>
+		<string>white</string>
+		<key>incrementButton</key>
+		<string>#24AAFF</string>
+		<key>pictureBackground</key>
+		<string>#202020</string>
+		<key>htmlDescription</key>
+		<string>white 65%</string>
+		<key>cardsInfoBackground</key>
+		<string>#222222</string>
+		<key>cardsInfoOverlayBackground</key>
+		<string>black 75%</string>
+	</dict>
+	<key>airingTime</key>
+	<dict>
+		<key>regular</key>
+		<string>white 80%</string>
+		<key>separator</key>
+		<string>white 50%</string>
+		<key>available</key>
+		<string>#5FD94E 80%</string>
+		<key>upToDate</key>
+		<string>#D95F4E 80%</string>
+		<key>notAiredYet</key>
+		<string>white 50%</string>
+	</dict>
+	<key>dropdownPopup</key>
+	<dict>
+		<key>overlay</key>
+		<string>#161616 80%</string>
+		<key>background</key>
+		<string>#202020</string>
+		<key>itemsRegularBackground</key>
+		<string>white 2%</string>
+		<key>itemsSelectedBackground</key>
+		<string>white 8%</string>
+		<key>sectionText</key>
+		<string>white</string>
+		<key>selectedText</key>
+		<string>white</string>
+		<key>regularText</key>
+		<string>white 80%</string>
+		<key>checkmark</key>
+		<string>white</string>
+	</dict>
+	<key>actionPopup</key>
+	<dict>
+		<key>overlay</key>
+		<string>black 50%</string>
+		<key>background</key>
+		<string>#161616</string>
+		<key>title</key>
+		<string>white 70%</string>
+		<key>text</key>
+		<string>white</string>
+	</dict>
+	<key>previewPopup</key>
+	<dict>
+		<key>blurEffect</key>
+		<string>dark</string>
+		<key>blurOverlay</key>
+		<string>clear</string>
+		<key>header</key>
+		<string>white 10%</string>
+		<key>background</key>
+		<string>#252627</string>
+	</dict>
+	<key>detailsView</key>
+	<dict>
+		<key>sectionTitle</key>
+		<string>white</string>
+		<key>editableLabel</key>
+		<string>white</string>
+		<key>editableContent</key>
+		<string>#24AAFF</string>
+		<key>editableExtra</key>
+		<string>white 50%</string>
+		<key>editableRegularBackground</key>
+		<string>clear</string>
+		<key>editableSelectedBackground</key>
+		<string>white 10%</string>
+		<key>informationLabel</key>
+		<string>white</string>
+		<key>informationContent</key>
+		<string>white 60%</string>
+		<key>relatedCategory</key>
+		<string>white 60%</string>
+	</dict>
+	<key>genericView</key>
+	<dict>
+		<key>importantText</key>
+		<string>white</string>
+		<key>importantSubtitleText</key>
+		<string>white 80%</string>
+		<key>subtitleText</key>
+		<string>white 50%</string>
+		<key>labelText</key>
+		<string>white 50%</string>
+		<key>highlightedText</key>
+		<string>#24AAFF</string>
+		<key>warningText</key>
+		<string>#D95F4E</string>
+		<key>htmlLongDescription</key>
+		<string>white 80%</string>
+		<key>headerBackground</key>
+		<string>#232323</string>
+	</dict>
+	<key>misc</key>
+	<dict>
+		<key>listFooterText</key>
+		<string>white 50%</string>
+		<key>comparisonPositive</key>
+		<string>#24AAFF</string>
+		<key>comparisonNegative</key>
+		<string>#D95F4E</string>
+	</dict>
+	<key>settings</key>
+	<dict>
+		<key>backgroundColor</key>
+		<string>#161616</string>
+		<key>cellBackgroundColor</key>
+		<string>#202020</string>
+		<key>cellSelectedColor</key>
+		<string>#303030</string>
+	</dict>
+</dict>
+</plist>
